@@ -16,16 +16,17 @@ and use and to release it explicitly as a Free Hardware Design./
 
 The VCG board is build around oven controlled crystal oscillator.
 
-10 MHz output of the oscillator is buffered on the board with low skew/low jitter
-clock driver IC and routed to receivers.  A fractionall (??? FIXME) PLL synchronised
-to the base frequency is provided on the board to generate output frequencies
-in range FIXME MHz.  Board temperature and power consumtion are monitored
-with a system controller device connected to an I2C bus. This I2C bus is
-also used to access PLL control registers and DAC for oscillator
-tune voltage.  All the control signals and output frequency are
-available on a connector for a control board.  Future plans include
-design of an MCU and FPGA based control boards tailored
-for different applications.
+10 MHz output of the oscillator is buffered on the board with low
+skew/low jitter clock driver IC and routed to receivers.  A
+fractionall (??? FIXME) PLL synchronised to the base frequency is
+provided on the board to generate output frequencies in range FIXME
+MHz.  Board temperature and power consumtion are monitored with a
+system controller device connected to an I2C bus. This I2C bus is also
+used to access PLL control registers, DAC for oscillator tune voltage
+and EEPROM (FRAM? FIXME) for calibration parameters and log data.  All
+the control signals and output frequency are available on a connector
+for a control board.  Future plans include design of an MCU and FPGA
+based control boards tailored for different applications.
 
 The module is powered from external stabilized +5V power supply,
 all internal circuits run at +3.3V power obtained with two on-board
@@ -54,6 +55,8 @@ LVDS
 ### Oscillator tune voltage DAC
 
 ### System monitoring
+
+### Calibration parameters and data log EEPROM/FRAM (FIXME)
 
 ## References
 
