@@ -1,7 +1,7 @@
 # Versatile Clock Generator (VCG)
 
 The VCG module is a stable and precise frequency source designed to be used
-in experiments with time keeping (GPSDO), clock synchronisation (PTPv2, IEEE-1588)
+in experiments with time keeping (GPSDO), clock synchronization (PTPv2, IEEE-1588)
 and Software Defined Radio (SDR).
 
 The hardware is designed with free/open-source KiCAD EDA Software Suite.
@@ -18,9 +18,9 @@ The VCG board is build around oven controlled crystal oscillator.
 
 10 MHz output of the oscillator is buffered on the board with low
 skew/low jitter clock driver IC and routed to receivers.  A
-fractionall (??? FIXME) PLL synchronised to the base frequency is
+fractional (??? FIXME) PLL synchronized to the base frequency is
 provided on the board to generate output frequencies in range FIXME
-MHz.  Board temperature and power consumtion are monitored with a
+MHz.  Board temperature and power consumption are monitored with a
 system controller device connected to an I2C bus. This I2C bus is also
 used to access PLL control registers, DAC for oscillator tune voltage
 and EEPROM (FRAM? FIXME) for calibration parameters and log data.  All
@@ -31,18 +31,21 @@ based control boards tailored for different applications.
 The module is powered from external stabilized +5V power supply,
 all internal circuits run at +3.3V power obtained with two on-board
 LDO regulators. Output frequencies are available on external connectors
-at LV-CMOS and LVDS levels.  SMA connectors are used for LV-CMOS
+at LVCMOS and LVDS levels.  SMA connectors are used for LVCMOS
 signals and SATA connector for LVDS.
 
 ### Crystal Oscillator
 
 Abracon AOCJY3-10.000MHz  0..50 oC, +/-5 ppb
 
-For experimets with other (less accurate/less stable) crystals and
-to test system monitoring circuits a separate small module is developed.
+For experiments with other (less accurate/less stable) crystals and to
+test system monitoring circuits a separate small module is developed.
 the module may be plugged into the board in place of AOCJY3 oscillator
 and provides 10 MHz oscillator (10ppb..50ppm), 2.8V reference voltage,
-and +3.3V power load (five 10 Ohm resistors connected in parallel).
+and +3.3V power load (five 10 Ohm / 2 Watt FIXME resistors connected
+in parallel). Design files for the module are available under osc/
+directory.
+
 
 ### PLL
 
@@ -81,7 +84,7 @@ manufacturing files) are released under CERN OHL v1.2.  The design is
 done with KiCAD EDA Software Suite which is available under GNU GPL v2.
 
 The author will appreciate to be informed about any use of the project
-documents under Section 4.2 of the CERN OHL v1.2, but do not require
+documents under Section 4.2 of the CERN OHL v1.2, but does not require
 so.
 
 In addition to the CERN OHL v1.2 all the project materials are covered
