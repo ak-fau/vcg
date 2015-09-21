@@ -2,7 +2,9 @@
 
 The VCG module is a stable and precise frequency source designed to be used
 in experiments with time keeping (GPSDO), clock synchronization (PTPv2, IEEE-1588)
-and Software Defined Radio (SDR).
+and Software Defined Radio (SDR).  Base frequency tuning, PLL configuration
+and system monitoring (temperature and power consumption) are implemented
+with I2C-bus connected devices.
 
 The hardware is designed with free/open-source KiCAD EDA Software Suite.
 
@@ -44,10 +46,10 @@ frequency source on the board.
 
 For experiments with other (less accurate/less stable) crystals and to
 test system monitoring circuits a separate small module is developed.
-The module may be plugged into the board in place of AOCJY3 oscillator
-and provides 10 MHz output (10ppb..50ppm), 2.8V reference voltage,
-and +3.3V power load (five 10 Ohm resistors connected in parallel).
-Design files for the module are available under osc/ directory.
+The module may be plugged into the main VCG board in place of AOCJY3
+oscillator and provides 10 MHz output (10ppb..50ppm) and +3.3V power
+load (up to five 10 Ohm resistors connected in parallel).  Design
+files for the module are available under osc/ directory.
 
 ### PLL
 
