@@ -1,0 +1,75 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADR280
+D 1.2 V Ultralow Power High PSRR Voltage Reference
+$ENDCMP
+#
+$CMP AOCJY3
+D Oven Controlled Crystal Oscillator
+$ENDCMP
+#
+$CMP AOCJYR
+D LVCMOS SMD Stratum 3 OCXO
+$ENDCMP
+#
+$CMP ASOF3S3
+D LVCMOS SMD Stratum 3 OCXO
+$ENDCMP
+#
+$CMP AST3TQ-28
+D Precision SMD VCTCXO
+$ENDCMP
+#
+$CMP ASV
+D HCMOS SMD XO
+$ENDCMP
+#
+$CMP C16AB
+D DIN 41612 C16AB connector
+$ENDCMP
+#
+$CMP CDCE706
+D Programmable 3-PLL clock synthesizer/multiplier/divider
+$ENDCMP
+#
+$CMP CDCLVC1106
+D LVCMOS High-performance clock buffer
+$ENDCMP
+#
+$CMP FM24CL64B
+D 64 Kbit serial (I2C) F-RAM
+$ENDCMP
+#
+$CMP FVXO-HC53
+D HCMOS VCXO
+$ENDCMP
+#
+$CMP LTC2050
+D Zero-drift Operational Amplifier
+$ENDCMP
+#
+$CMP LTC2607-1
+D 16-bit dual rail-to-rail DAC
+$ENDCMP
+#
+$CMP SN65LVDS1
+D High-speed LVDS driver
+$ENDCMP
+#
+$CMP SN74LVC2G66
+D Dua bilaterial analog switch
+$ENDCMP
+#
+$CMP TMP512
+D Temperature and power supply system monitor
+$ENDCMP
+#
+$CMP TPS736xxDCQ
+D Cap-free 400mA NMOS LDO
+$ENDCMP
+#
+$CMP TPS786xxKTT
+D Ultra-low noise, high PSRR, fast, RF, 1.5A LDO
+$ENDCMP
+#
+#End Doc Library
