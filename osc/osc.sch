@@ -239,163 +239,6 @@ Wire Wire Line
 Text Label 4900 2350 0    60   ~ 0
 Vdd
 $Comp
-L CONN_1 P4
-U 1 1 55A7862B
-P 5200 6300
-F 0 "P4" H 5280 6300 40  0000 L CNN
-F 1 "CONN_1" H 5200 6355 30  0001 C CNN
-F 2 "" H 5200 6300 60  0000 C CNN
-F 3 "" H 5200 6300 60  0000 C CNN
-	1    5200 6300
-	1    0    0    1   
-$EndComp
-$Comp
-L ADR280 U?
-U 1 1 55F7D740
-P 2550 6250
-F 0 "U?" H 2600 6450 60  0000 C CNN
-F 1 "ADR280" H 2550 6050 60  0000 L CNN
-F 2 "" H 2000 6400 60  0000 C CNN
-F 3 "" H 2000 6400 60  0000 C CNN
-	1    2550 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L LTC2050 U?
-U 1 1 55F7D84F
-P 3700 6300
-F 0 "U?" H 3900 6500 60  0000 C CNN
-F 1 "LTC2050" H 3850 6200 60  0000 L CNN
-F 2 "" H 3700 6300 60  0000 C CNN
-F 3 "" H 3700 6300 60  0000 C CNN
-	1    3700 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 55F7D981
-P 2050 6550
-F 0 "C?" H 2050 6650 40  0000 L CNN
-F 1 "0.1" H 2056 6465 40  0000 L CNN
-F 2 "" H 2088 6400 30  0000 C CNN
-F 3 "" H 2050 6550 60  0000 C CNN
-	1    2050 6550
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 55F7DA61
-P 3200 6550
-F 0 "C?" H 3200 6650 40  0000 L CNN
-F 1 "0.1" H 3206 6465 40  0000 L CNN
-F 2 "" H 3238 6400 30  0000 C CNN
-F 3 "" H 3200 6550 60  0000 C CNN
-	1    3200 6550
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 55F7DAC4
-P 4300 6650
-F 0 "R?" V 4380 6650 40  0000 C CNN
-F 1 "28k" V 4307 6651 40  0000 C CNN
-F 2 "" V 4230 6650 30  0000 C CNN
-F 3 "" H 4300 6650 30  0000 C CNN
-	1    4300 6650
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R?
-U 1 1 55F7DB94
-P 4300 7250
-F 0 "R?" V 4380 7250 40  0000 C CNN
-F 1 "21k" V 4307 7251 40  0000 C CNN
-F 2 "" V 4230 7250 30  0000 C CNN
-F 3 "" H 4300 7250 30  0000 C CNN
-	1    4300 7250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2050 5900 2050 6350
-Wire Wire Line
-	2050 6150 2350 6150
-Wire Wire Line
-	2350 6350 2300 6350
-Wire Wire Line
-	2050 5900 3800 5900
-Wire Wire Line
-	3800 5900 3800 6050
-Connection ~ 2050 6150
-Wire Wire Line
-	3100 6250 3500 6250
-Wire Wire Line
-	3200 6350 3200 6250
-Connection ~ 3200 6250
-Wire Wire Line
-	3500 6350 3450 6350
-Wire Wire Line
-	3450 6350 3450 6950
-Wire Wire Line
-	4300 6900 4300 7000
-Wire Wire Line
-	4150 6300 5050 6300
-Wire Wire Line
-	4300 6400 4300 6300
-Connection ~ 4300 6300
-Text Label 4800 6300 0    60   ~ 0
-Vref
-Wire Wire Line
-	2050 6750 2050 7550
-Wire Wire Line
-	2050 7550 4900 7550
-Wire Wire Line
-	4300 7550 4300 7500
-Text Label 2550 7550 0    60   ~ 0
-GND
-Wire Wire Line
-	2300 6350 2300 7550
-Connection ~ 2300 7550
-Wire Wire Line
-	3200 6750 3200 7550
-Connection ~ 3200 7550
-Wire Wire Line
-	3800 6550 3800 7550
-Connection ~ 3800 7550
-$Comp
-L CONN_3 K?
-U 1 1 55F8059C
-P 5250 7450
-F 0 "K?" V 5200 7450 50  0000 C CNN
-F 1 "CONN_3" V 5300 7450 40  0000 C CNN
-F 2 "" H 5250 7450 60  0000 C CNN
-F 3 "" H 5250 7450 60  0000 C CNN
-	1    5250 7450
-	1    0    0    -1  
-$EndComp
-Connection ~ 4300 7550
-Wire Wire Line
-	3450 6950 4300 6950
-Connection ~ 4300 6950
-Text Label 4000 6950 0    60   ~ 0
-Vfb
-Wire Wire Line
-	4600 7450 4900 7450
-Text Label 4600 7450 0    60   ~ 0
-Vfb
-Wire Wire Line
-	4900 7350 4750 7350
-Wire Wire Line
-	4750 7350 4750 6300
-Connection ~ 4750 6300
-Text Notes 5050 7250 0    60   ~ 0
-Vref Trim
-Text Notes 3150 6200 0    60   ~ 0
-1.2V
-Text Notes 4350 6250 0    60   ~ 0
-2.8V
-Text Label 2550 5900 0    60   ~ 0
-Vdd
-$Comp
 L ASOF3S3 Y?
 U 1 1 55F810A1
 P 7550 2800
@@ -535,4 +378,22 @@ Wire Wire Line
 Connection ~ 3850 4300
 Text Notes 7300 5700 0    60   ~ 0
 Only one XO should be installed,\nfootprints on the PCB may overlap
+$Comp
+L CONN_1 P4
+U 1 1 5601594E
+P 6050 7450
+F 0 "P4" H 6130 7450 40  0000 L CNN
+F 1 "CONN_1" H 6050 7505 30  0001 C CNN
+F 2 "" H 6050 7450 60  0000 C CNN
+F 3 "" H 6050 7450 60  0000 C CNN
+F 4 "Mill-Max" H 6050 7450 60  0001 C CNN "Vendor"
+F 5 "3128-1-00-15-00-00-08-0" H 6050 7450 60  0001 C CNN "PartNum"
+	1    6050 7450
+	1    0    0    1   
+$EndComp
+NoConn ~ 5900 7450
+Text Notes 5900 7350 0    60   ~ 0
+Vref output\n(not implemented)
+Text Notes 7100 7100 0    60   ~ 0
+Versatile Clock Generator\nCopyright (c) 2015 Anton Kuzmin\n\nThe VCG is a Free Hardware project, it is released under dual licenses:\n - CERN Open Hardware License (OHL) v1.2\n - Community Research and Academic Programming License (CRAPL)
 $EndSCHEMATC
