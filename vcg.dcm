@@ -56,6 +56,10 @@ $CMP LTC2607-1
 D 16-bit dual rail-to-rail DAC
 $ENDCMP
 #
+$CMP SATA
+D S-ATA connector
+$ENDCMP
+#
 $CMP SMA
 D SMA connector
 $ENDCMP
