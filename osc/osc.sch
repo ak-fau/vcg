@@ -396,4 +396,6 @@ Text Notes 5900 7350 0    60   ~ 0
 Vref output\n(not implemented)
 Text Notes 7100 7100 0    60   ~ 0
 Versatile Clock Generator\nCopyright (c) 2015 Anton Kuzmin\n\nThe VCG is a Free Hardware project, it is released under dual licenses:\n - CERN Open Hardware License (OHL) v1.2\n - Community Research and Academic Programming License (CRAPL)
+Text Notes 7000 6500 0    60   ~ 12
+DRAFT              DO NOT USE\nThis schematic has not been validated in hardware\nand may contain errors.
 $EndSCHEMATC
