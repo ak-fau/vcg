@@ -32,6 +32,10 @@ $CMP CDCE706
 D Programmable 3-PLL clock synthesizer/multiplier/divider
 $ENDCMP
 #
+$CMP CDCLVC1104
+D LVCMOS High-performance clock buffer
+$ENDCMP
+#
 $CMP CDCLVC1106
 D LVCMOS High-performance clock buffer
 $ENDCMP
@@ -50,6 +54,14 @@ $ENDCMP
 #
 $CMP LTC2607-1
 D 16-bit dual rail-to-rail DAC
+$ENDCMP
+#
+$CMP SMA
+D SMA connector
+$ENDCMP
+#
+$CMP SMA_EDGE
+D SMA connector
 $ENDCMP
 #
 $CMP SN65LVDS1
