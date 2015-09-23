@@ -572,4 +572,6 @@ Text Notes 7450 7500 0    60   ~ 0
 I2C devices: system monitoring and F-RAM
 Text Notes 8150 7650 0    60   ~ 0
 2015-09-22
+Text Notes 7000 6500 0    60   ~ 12
+DRAFT              DO NOT USE\nThis schematic has not been validated in hardware\nand may contain errors.
 $EndSCHEMATC

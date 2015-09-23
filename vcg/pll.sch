@@ -1194,4 +1194,6 @@ Wire Wire Line
 	4700 7100 4700 6600
 Wire Wire Line
 	4700 6600 5400 6600
+Text Notes 7000 6500 0    60   ~ 12
+DRAFT              DO NOT USE\nThis schematic has not been validated in hardware\nand may contain errors.
 $EndSCHEMATC

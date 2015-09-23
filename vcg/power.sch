@@ -614,4 +614,6 @@ Text Notes 7750 1200 0    60   ~ 0
 3.3V, 400mA
 Text Notes 7750 3450 0    60   ~ 0
 3.3V, 1.5A
+Text Notes 7000 6500 0    60   ~ 12
+DRAFT              DO NOT USE\nThis schematic has not been validated in hardware\nand may contain errors.
 $EndSCHEMATC

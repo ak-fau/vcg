@@ -1250,4 +1250,6 @@ Connection ~ 5300 1050
 Wire Wire Line
 	5850 1050 5950 1050
 Connection ~ 5950 1300
+Text Notes 7000 6500 0    60   ~ 12
+DRAFT              DO NOT USE\nThis schematic has not been validated in hardware\nand may contain errors.
 $EndSCHEMATC

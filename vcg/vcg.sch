@@ -841,4 +841,6 @@ Text Notes 700  1450 0    60   ~ 0
 Low-noise components with separate power/ground planes
 Wire Notes Line
 	5600 3850 5600 1300
+Text Notes 7000 6500 0    60   ~ 12
+DRAFT              DO NOT USE\nThis schematic has not been validated in hardware\nand may contain errors.
 $EndSCHEMATC
