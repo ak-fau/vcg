@@ -118,9 +118,7 @@ F 3 "" H 3550 7150 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1300 5800 1300 6050
-Wire Wire Line
-	1300 6050 1300 6250
+	1300 5800 1300 6250
 Wire Wire Line
 	1300 6050 1600 6050
 Wire Wire Line
@@ -131,28 +129,18 @@ Wire Wire Line
 	3050 5800 3050 5950
 Connection ~ 1300 6050
 Wire Wire Line
-	2350 6150 2450 6150
-Wire Wire Line
-	2450 6150 2750 6150
+	2350 6150 2750 6150
 Wire Wire Line
 	2450 6250 2450 6150
 Connection ~ 2450 6150
 Wire Wire Line
 	2750 6250 2700 6250
 Wire Wire Line
-	2700 6250 2700 6850
+	2700 6250 2700 7600
 Wire Wire Line
-	2700 6850 2700 7600
+	3550 6800 3550 6900
 Wire Wire Line
-	3550 6800 3550 6850
-Wire Wire Line
-	3550 6850 3550 6900
-Wire Wire Line
-	3400 6200 3550 6200
-Wire Wire Line
-	3550 6200 4000 6200
-Wire Wire Line
-	4000 6200 4950 6200
+	3400 6200 4950 6200
 Wire Wire Line
 	3550 6300 3550 6200
 Connection ~ 3550 6200
@@ -161,15 +149,7 @@ V2P8
 Wire Wire Line
 	1300 6650 1300 7450
 Wire Wire Line
-	1300 7450 1550 7450
-Wire Wire Line
-	1550 7450 2450 7450
-Wire Wire Line
-	2450 7450 3050 7450
-Wire Wire Line
-	3050 7450 3550 7450
-Wire Wire Line
-	3550 7450 4150 7450
+	1300 7450 4150 7450
 Wire Wire Line
 	3550 7450 3550 7400
 Text Label 1800 7450 0    60   ~ 0
@@ -295,24 +275,24 @@ $EndComp
 $Comp
 L R R?
 U 1 1 56017DC6
-P 5950 2400
-F 0 "R?" V 6030 2400 40  0000 C CNN
-F 1 "5.6k" V 5957 2401 40  0000 C CNN
-F 2 "" V 5880 2400 30  0000 C CNN
-F 3 "" H 5950 2400 30  0000 C CNN
-	1    5950 2400
+P 6900 2450
+F 0 "R?" V 6980 2450 40  0000 C CNN
+F 1 "5.6k" V 6907 2451 40  0000 C CNN
+F 2 "" V 6830 2450 30  0000 C CNN
+F 3 "" H 6900 2450 30  0000 C CNN
+	1    6900 2450
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R?
 U 1 1 56017E25
-P 6300 2050
-F 0 "R?" V 6380 2050 40  0000 C CNN
-F 1 "1k" V 6307 2051 40  0000 C CNN
-F 2 "" V 6230 2050 30  0000 C CNN
-F 3 "" H 6300 2050 30  0000 C CNN
-	1    6300 2050
-	0    1    1    0   
+P 6900 1850
+F 0 "R?" V 6980 1850 40  0000 C CNN
+F 1 "1k" V 6907 1851 40  0000 C CNN
+F 2 "" V 6830 1850 30  0000 C CNN
+F 3 "" H 6900 1850 30  0000 C CNN
+	1    6900 1850
+	-1   0    0    1   
 $EndComp
 $Comp
 L LTC2050 U?
@@ -326,66 +306,39 @@ F 3 "" H 6250 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 1300 4600 1300
-Wire Wire Line
-	4600 1300 5350 1300
+	4500 1300 5350 1300
 Wire Wire Line
 	4600 1300 4600 1200
 Connection ~ 4600 1300
 Wire Wire Line
-	4500 1500 4800 1500
-Wire Wire Line
-	4800 1500 5350 1500
+	4500 1500 5350 1500
 Wire Wire Line
 	4800 1500 4800 1200
 Connection ~ 4800 1500
 Wire Wire Line
-	5150 1050 5300 1050
-Wire Wire Line
-	5300 1050 5450 1050
+	5150 1050 5450 1050
 Wire Wire Line
 	5300 1050 5300 1150
 Wire Wire Line
-	5850 1500 5950 1500
-Wire Wire Line
-	5950 1500 6050 1500
+	5850 1500 6050 1500
 Wire Wire Line
 	5850 1300 5950 1300
 Wire Wire Line
-	5950 1050 5950 1300
-Wire Wire Line
-	5950 1300 5950 1500
+	5950 1050 5950 1500
 Connection ~ 5950 1500
 Wire Wire Line
-	6050 1600 5950 1600
-Wire Wire Line
-	5950 1600 5950 2050
-Wire Wire Line
-	5950 2050 5950 2150
-Wire Wire Line
-	6050 2050 5950 2050
-Connection ~ 5950 2050
-Wire Wire Line
-	6700 1550 6900 1550
-Wire Wire Line
-	6900 1550 7450 1550
-Wire Wire Line
-	6900 1550 6900 2050
-Wire Wire Line
-	6900 2050 6550 2050
+	6700 1550 7450 1550
 $Comp
 L GNDA #PWR?
 U 1 1 560181EF
-P 5950 2750
-F 0 "#PWR?" H 5950 2750 40  0001 C CNN
-F 1 "GNDA" H 5950 2680 40  0000 C CNN
-F 2 "" H 5950 2750 60  0000 C CNN
-F 3 "" H 5950 2750 60  0000 C CNN
-	1    5950 2750
+P 6900 2800
+F 0 "#PWR?" H 6900 2800 40  0001 C CNN
+F 1 "GNDA" H 6900 2730 40  0000 C CNN
+F 2 "" H 6900 2800 60  0000 C CNN
+F 3 "" H 6900 2800 60  0000 C CNN
+	1    6900 2800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5950 2750 5950 2650
 $Comp
 L GNDA #PWR?
 U 1 1 56018247
@@ -424,15 +377,7 @@ $EndComp
 Wire Wire Line
 	6350 1300 6350 800 
 Wire Wire Line
-	1400 800  6350 800 
-Wire Wire Line
-	6350 800  6750 800 
-Wire Wire Line
-	6750 800  7000 800 
-Wire Wire Line
-	7000 800  9250 800 
-Wire Wire Line
-	9250 800  9900 800 
+	1400 800  9900 800 
 Wire Wire Line
 	7000 800  7000 900 
 Wire Wire Line
@@ -452,9 +397,7 @@ F 3 "" H 6750 1400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 1300 6750 1350
-Wire Wire Line
-	6750 1350 6750 1400
+	6750 1300 6750 1400
 Wire Wire Line
 	6750 1350 7000 1350
 Wire Wire Line
@@ -493,7 +436,6 @@ F 3 "" H 8400 1550 30  0000 C CNN
 	1    8400 1550
 	0    1    1    0   
 $EndComp
-Connection ~ 6900 1550
 Text Label 7000 1550 0    60   ~ 0
 V_SUM
 Text Label 4900 1300 0    60   ~ 0
@@ -525,9 +467,7 @@ $EndComp
 Wire Wire Line
 	8050 2150 8050 2050
 Wire Wire Line
-	7950 1550 8050 1550
-Wire Wire Line
-	8050 1550 8150 1550
+	7950 1550 8150 1550
 Wire Wire Line
 	8050 1650 8050 1550
 Connection ~ 8050 1550
@@ -560,9 +500,7 @@ Wire Wire Line
 Wire Wire Line
 	8750 1500 8950 1500
 Wire Wire Line
-	9600 1550 9750 1550
-Wire Wire Line
-	9750 1550 9900 1550
+	9600 1550 9900 1550
 Wire Wire Line
 	9750 1550 9750 2050
 Wire Wire Line
@@ -624,9 +562,7 @@ F 3 "" H 9650 1400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9650 1300 9650 1350
-Wire Wire Line
-	9650 1350 9650 1400
+	9650 1300 9650 1400
 Wire Wire Line
 	9650 1350 9900 1350
 Wire Wire Line
@@ -673,11 +609,7 @@ F 3 "" H 10500 2150 60  0000 C CNN
 $EndComp
 Connection ~ 9750 1550
 Wire Wire Line
-	10400 1550 10500 1550
-Wire Wire Line
-	10500 1550 10750 1550
-Wire Wire Line
-	10750 1550 10900 1550
+	10400 1550 10900 1550
 Wire Wire Line
 	10500 1650 10500 1550
 Connection ~ 10500 1550
@@ -714,16 +646,12 @@ Wire Wire Line
 Wire Wire Line
 	2700 1100 2700 1200
 Wire Wire Line
-	1300 1800 2500 1800
-Wire Wire Line
-	2500 1800 3250 1800
+	1300 1800 3250 1800
 Wire Wire Line
 	2500 1800 2500 1700
 Connection ~ 2500 1800
 Wire Wire Line
-	1300 1900 2700 1900
-Wire Wire Line
-	2700 1900 3250 1900
+	1300 1900 3250 1900
 Wire Wire Line
 	2700 1900 2700 1700
 Connection ~ 2700 1900
@@ -800,11 +728,7 @@ $EndComp
 Wire Wire Line
 	2450 2200 2450 2100
 Wire Wire Line
-	2250 2100 2450 2100
-Wire Wire Line
-	2450 2100 2700 2100
-Wire Wire Line
-	2700 2100 3250 2100
+	2250 2100 3250 2100
 Wire Wire Line
 	2700 2200 2700 2100
 Connection ~ 2700 2100
@@ -846,17 +770,9 @@ F 3 "" H 1800 1100 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2100 1100 2250 1100
+	2100 1100 3150 1100
 Wire Wire Line
-	2250 1100 2500 1100
-Wire Wire Line
-	2500 1100 2700 1100
-Wire Wire Line
-	2700 1100 3150 1100
-Wire Wire Line
-	1300 1100 1400 1100
-Wire Wire Line
-	1400 1100 1500 1100
+	1300 1100 1500 1100
 Wire Wire Line
 	1400 1100 1400 800 
 Connection ~ 6350 800 
@@ -881,11 +797,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 1500 3250 1500
 Wire Wire Line
-	3150 1100 3150 1300
-Wire Wire Line
-	3150 1300 3150 1400
-Wire Wire Line
-	3150 1400 3150 1650
+	3150 1100 3150 1650
 Wire Wire Line
 	3150 1650 3250 1650
 Connection ~ 2700 1100
@@ -968,18 +880,12 @@ Wire Wire Line
 Wire Wire Line
 	2400 3850 2500 3850
 Wire Wire Line
-	3000 3850 3100 3850
-Wire Wire Line
-	3100 3850 3550 3850
+	3000 3850 3550 3850
 Wire Wire Line
 	3100 3950 3100 3850
 Connection ~ 3100 3850
 Wire Wire Line
-	4200 3900 4450 3900
-Wire Wire Line
-	4450 3900 4650 3900
-Wire Wire Line
-	4650 3900 4750 3900
+	4200 3900 4750 3900
 Wire Wire Line
 	4450 3900 4450 4350
 Wire Wire Line
@@ -987,9 +893,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 4350 3550 4350
 Wire Wire Line
-	3450 3950 3450 4350
-Wire Wire Line
-	3450 4350 3450 4450
+	3450 3950 3450 4450
 Wire Wire Line
 	3450 3950 3550 3950
 Connection ~ 3450 4350
@@ -1143,11 +1047,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 3900 5550 2000
 Wire Wire Line
-	5550 2000 5300 2000
-Wire Wire Line
-	5300 2000 5050 2000
-Wire Wire Line
-	5050 2000 4500 2000
+	5550 2000 4500 2000
 Wire Wire Line
 	5050 2100 5050 2000
 Connection ~ 5050 2000
@@ -1252,4 +1152,43 @@ Wire Wire Line
 Connection ~ 5950 1300
 Text Notes 7000 6500 0    60   ~ 12
 DRAFT              DO NOT USE\nThis schematic has not been validated in hardware\nand may contain errors.
+$Comp
+L R R?
+U 1 1 561ECCDE
+P 5900 2450
+F 0 "R?" V 5980 2450 40  0000 C CNN
+F 1 "DNI" V 5907 2451 40  0000 C CNN
+F 2 "" V 5830 2450 30  0000 C CNN
+F 3 "" H 5900 2450 30  0000 C CNN
+	1    5900 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2200 5900 1500
+Connection ~ 5900 1500
+$Comp
+L GNDA #PWR?
+U 1 1 561ED7EE
+P 5900 2800
+F 0 "#PWR?" H 5900 2800 40  0001 C CNN
+F 1 "GNDA" H 5900 2730 40  0000 C CNN
+F 2 "" H 5900 2800 60  0000 C CNN
+F 3 "" H 5900 2800 60  0000 C CNN
+	1    5900 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2800 5900 2700
+Wire Wire Line
+	6900 2800 6900 2700
+Wire Wire Line
+	6900 1600 6900 1550
+Connection ~ 6900 1550
+Wire Wire Line
+	6900 2200 6900 2100
+Wire Wire Line
+	6050 1600 6050 2150
+Wire Wire Line
+	6050 2150 6900 2150
+Connection ~ 6900 2150
 $EndSCHEMATC
