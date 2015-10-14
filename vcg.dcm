@@ -48,12 +48,20 @@ $CMP FVXO-HC53
 D HCMOS VCXO
 $ENDCMP
 #
+$CMP HSMS2812
+D RF Schottky Barrier Diodes
+$ENDCMP
+#
 $CMP LTC2050
 D Zero-drift Operational Amplifier
 $ENDCMP
 #
 $CMP LTC2607-1
 D 16-bit dual rail-to-rail DAC
+$ENDCMP
+#
+$CMP LTC6957-3
+D Low phase noise dual output buffer/driver/level converter
 $ENDCMP
 #
 $CMP SATA
