@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ADCMP600
+D Fast rail-to-rail single supply comparator
+$ENDCMP
+#
 $CMP ADR280
 D 1.2 V Ultralow Power High PSRR Voltage Reference
 $ENDCMP
@@ -78,6 +82,10 @@ $ENDCMP
 #
 $CMP SN65LVDS1
 D High-speed LVDS driver
+$ENDCMP
+#
+$CMP SN74LVC2G14
+D Dual Schmitt-trigger inverter
 $ENDCMP
 #
 $CMP SN74LVC2G66
