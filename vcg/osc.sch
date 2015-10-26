@@ -50,7 +50,7 @@ DRAFT              DO NOT USE\nThis schematic has not been validated in hardware
 Text Notes 7100 7100 0    60   ~ 0
 Versatile Clock Generator\nCopyright (c) 2015 Anton Kuzmin\n\nThe VCG is a Free Hardware project, it is released under dual licenses:\n - CERN Open Hardware License (OHL) v1.2\n - Community Research and Academic Programming License (CRAPL)
 Text Notes 8200 7650 0    60   ~ 0
-2015-09-22
+2015-10-27
 Text Notes 7550 7500 0    60   ~ 0
 Oven controller crystal oscillator
 $Comp

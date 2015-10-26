@@ -49,8 +49,8 @@ Text Notes 7100 7100 0    60   ~ 0
 Versatile Clock Generator\nCopyright (c) 2015 Anton Kuzmin\n\nThe VCG is a Free Hardware project, it is released under dual licenses:\n - CERN Open Hardware License (OHL) v1.2\n - Community Research and Academic Programming License (CRAPL)
 Text Notes 7500 7500 0    60   ~ 0
 Oscillator fine tuning DAC
-Text Notes 8250 7650 0    60   ~ 0
-2015-09-22
+Text Notes 8200 7650 0    60   ~ 0
+2015-10-27
 $Comp
 L ADR280 U?
 U 1 1 56015E9D
