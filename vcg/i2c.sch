@@ -578,4 +578,6 @@ Text Notes 5250 2250 0    60   ~ 0
 I2C addr: 0x5C\n(alert: 0x0C)
 Text Notes 8150 5200 0    60   ~ 0
 I2C addr: 0x50
+Text Notes 2400 2450 0    60   ~ 0
+Connected by wires
 $EndSCHEMATC
