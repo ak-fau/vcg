@@ -574,4 +574,8 @@ Text Notes 8150 7650 0    60   ~ 0
 2015-09-22
 Text Notes 7000 6500 0    60   ~ 12
 DRAFT              DO NOT USE\nThis schematic has not been validated in hardware\nand may contain errors.
+Text Notes 5250 2250 0    60   ~ 0
+I2C addr: 0x5C\n(alert: 0x0C)
+Text Notes 8150 5200 0    60   ~ 0
+I2C addr: 0x50
 $EndSCHEMATC

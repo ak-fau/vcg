@@ -1233,4 +1233,6 @@ Wire Wire Line
 	1950 2000 1950 2100
 Connection ~ 2700 2100
 Connection ~ 1950 2100
+Text Notes 4100 4700 0    60   ~ 0
+I2C addr: 0x69
 $EndSCHEMATC
