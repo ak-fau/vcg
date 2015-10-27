@@ -60,7 +60,7 @@ F 1 "C32AB" H 10200 1550 60  0000 L CNN
 F 2 "" H 10200 2400 60  0000 C CNN
 F 3 "" H 10200 2400 60  0000 C CNN
 	1    10200 2400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L C32AB P?
@@ -71,7 +71,7 @@ F 1 "C32AB" H 9300 1550 60  0000 L CNN
 F 2 "" H 9300 2400 60  0000 C CNN
 F 3 "" H 9300 2400 60  0000 C CNN
 	2    9300 2400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	9950 3350 8500 3350
@@ -196,7 +196,7 @@ F 1 "CONN_2" V 10450 1000 40  0000 C CNN
 F 2 "" H 10400 1000 60  0000 C CNN
 F 3 "" H 10400 1000 60  0000 C CNN
 	1    10400 1000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	9750 900  9750 1650
@@ -208,7 +208,7 @@ Wire Wire Line
 	10050 1100 9950 1100
 Connection ~ 9950 1750
 Wire Wire Line
-	9750 900  10050 900 
+	9750 900  10050 900
 Connection ~ 9750 1450
 Wire Wire Line
 	3650 2700 3650 2900
@@ -223,22 +223,75 @@ Vc
 Text Label 3300 2550 0    60   ~ 0
 Vref
 $Sheet
+S 1950 2100 1200 1050
+U 5600104A
+F0 "DAC" 60
+F1 "dac.sch" 60
+F2 "Vc" O R 3150 2400 60
+F3 "VDD_DAC" U L 1950 2950 60
+F4 "SDA" B L 1950 2250 60
+F5 "SCL" I L 1950 2350 60
+F6 "GNDA" U L 1950 3050 60
+F7 "Vref" U L 1950 2650 60
+$EndSheet
+$Sheet
+S 3850 2150 1300 650
+U 561D755B
+F0 "Oscillator" 60
+F1 "osc.sch" 60
+F2 "VDD_OSC" U L 3850 2250 60
+F3 "Vc" U L 3850 2400 60
+F4 "GNDA" U L 3850 2700 60
+F5 "Vref" O L 3850 2550 60
+F6 "Fout" O R 5150 2250 60
+F7 "VDD_D" U R 5150 2550 60
+F8 "GND" U R 5150 2700 60
+F9 "EN" I R 5150 2400 60
+$EndSheet
+$Sheet
 S 6350 2100 1050 1100
 U 55FFF4AE
 F0 "Clk Buffers and PLL" 60
 F1 "pll.sch" 60
-F2 "F10" I L 6350 2250 60 
-F3 "SDA" B L 6350 2550 60 
-F4 "SCL" I L 6350 2650 60 
-F5 "VDD_D" U L 6350 2950 60 
-F6 "GND" U L 6350 3050 60 
-F7 "F10_C" O R 7400 2250 60 
-F8 "Fpll_C" O R 7400 2450 60 
-F9 "Fpll_E_P" O R 7400 2650 60 
-F10 "Fpll_E_N" O R 7400 2750 60 
-F11 "Fpll_F_P" O R 7400 2950 60 
-F12 "Fpll_F_N" O R 7400 3050 60 
-F13 "EN_VDD_A" I L 6350 2800 60 
+F2 "F10" I L 6350 2250 60
+F3 "SDA" B L 6350 2550 60
+F4 "SCL" I L 6350 2650 60
+F5 "VDD_D" U L 6350 2950 60
+F6 "GND" U L 6350 3050 60
+F7 "F10_C" O R 7400 2250 60
+F8 "Fpll_C" O R 7400 2450 60
+F9 "Fpll_E_P" O R 7400 2650 60
+F10 "Fpll_E_N" O R 7400 2750 60
+F11 "Fpll_F_P" O R 7400 2950 60
+F12 "Fpll_F_N" O R 7400 3050 60
+F13 "EN_VDD_A" I L 6350 2800 60
+$EndSheet
+$Sheet
+S 6350 4400 1250 850
+U 5600333F
+F0 "Power" 60
+F1 "power.sch" 60
+F2 "VDD_D" U R 7600 4500 60
+F3 "VDD_OSC" U R 7600 4700 60
+F4 "VDD_DAC" U R 7600 4900 60
+F5 "Vin" U L 6350 4500 60
+F6 "V_P" U R 7600 5100 60
+F7 "V_M" U R 7600 5200 60
+F8 "GND" U L 6350 5200 60
+F9 "EN_VDD_A" I L 6350 4700 60
+$EndSheet
+$Sheet
+S 8950 4400 1050 1150
+U 56007358
+F0 "I2C" 60
+F1 "i2c.sch" 60
+F2 "SDA" B L 8950 4550 60
+F3 "SCL" I L 8950 4650 60
+F4 "GND" U L 8950 5400 60
+F5 "VDD_D" U L 8950 5300 60
+F6 "V_P" U L 8950 4950 60
+F7 "V_M" U L 8950 5050 60
+F8 "EN_VDD_A" O R 10000 4550 60
 $EndSheet
 Wire Wire Line
 	5900 2550 6350 2550
@@ -255,7 +308,7 @@ F 1 "GND" H 6200 3180 30  0001 C CNN
 F 2 "" H 6200 3250 60  0000 C CNN
 F 3 "" H 6200 3250 60  0000 C CNN
 	1    6200 3250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6200 3250 6200 3050
@@ -278,22 +331,10 @@ F 1 "GND" H 8500 3330 30  0001 C CNN
 F 2 "" H 8500 3400 60  0000 C CNN
 F 3 "" H 8500 3400 60  0000 C CNN
 	1    8500 3400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	8500 3350 8500 3400
-$Sheet
-S 1950 2100 1200 1050
-U 5600104A
-F0 "DAC" 60
-F1 "dac.sch" 60
-F2 "Vc" O R 3150 2400 60 
-F3 "VDD_DAC" U L 1950 2950 60 
-F4 "SDA" B L 1950 2250 60 
-F5 "SCL" I L 1950 2350 60 
-F6 "GNDA" U L 1950 3050 60 
-F7 "Vref" U L 1950 2650 60 
-$EndSheet
 Wire Wire Line
 	1350 2950 1950 2950
 Wire Wire Line
@@ -306,20 +347,6 @@ Text Label 1350 2250 0    60   ~ 0
 SDA_DAC
 Text Label 1350 2350 0    60   ~ 0
 SCL_DAC
-$Sheet
-S 6350 4400 1250 850 
-U 5600333F
-F0 "Power" 60
-F1 "power.sch" 60
-F2 "VDD_D" U R 7600 4500 60 
-F3 "VDD_OSC" U R 7600 4700 60 
-F4 "VDD_DAC" U R 7600 4900 60 
-F5 "Vin" U L 6350 4500 60 
-F6 "V_P" U R 7600 5100 60 
-F7 "V_M" U R 7600 5200 60 
-F8 "GND" U L 6350 5200 60 
-F9 "EN_VDD_A" I L 6350 4700 60 
-$EndSheet
 Wire Wire Line
 	6150 4500 6350 4500
 Wire Wire Line
@@ -335,7 +362,7 @@ F 1 "GND" H 6150 5280 30  0001 C CNN
 F 2 "" H 6150 5350 60  0000 C CNN
 F 3 "" H 6150 5350 60  0000 C CNN
 	1    6150 5350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	7800 4500 7600 4500
@@ -351,19 +378,6 @@ Text Label 7800 4700 0    60   ~ 0
 VDD_OSC
 Text Label 7800 4900 0    60   ~ 0
 VDD_DAC
-$Sheet
-S 8950 4400 1050 1150
-U 56007358
-F0 "I2C" 60
-F1 "i2c.sch" 60
-F2 "SDA" B L 8950 4550 60 
-F3 "SCL" I L 8950 4650 60 
-F4 "GND" U L 8950 5400 60 
-F5 "VDD_D" U L 8950 5300 60 
-F6 "V_P" U L 8950 4950 60 
-F7 "V_M" U L 8950 5050 60 
-F8 "EN_VDD_A" O R 10000 4550 60 
-$EndSheet
 $Comp
 L GND #PWR?
 U 1 1 56007808
@@ -373,7 +387,7 @@ F 1 "GND" H 8800 5530 30  0001 C CNN
 F 2 "" H 8800 5600 60  0000 C CNN
 F 3 "" H 8800 5600 60  0000 C CNN
 	1    8800 5600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	8800 5600 8800 5400
@@ -404,7 +418,7 @@ F 1 "SN74LVC2G66" H 2600 5350 60  0000 L CNN
 F 2 "" H 2600 6100 60  0000 C CNN
 F 3 "" H 2600 6100 60  0000 C CNN
 	1    2800 5750
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L C C?
@@ -415,7 +429,7 @@ F 1 "0.1uF" H 3306 6265 40  0000 L CNN
 F 2 "" H 3338 6200 30  0000 C CNN
 F 3 "" H 3300 6350 60  0000 C CNN
 	1    3300 6350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR?
@@ -426,7 +440,7 @@ F 1 "GND" H 2300 6530 30  0001 C CNN
 F 2 "" H 2300 6600 60  0000 C CNN
 F 3 "" H 2300 6600 60  0000 C CNN
 	1    2300 6600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	3200 6050 3400 6050
@@ -448,7 +462,7 @@ F 1 "GND" H 3300 6530 30  0001 C CNN
 F 2 "" H 3300 6600 60  0000 C CNN
 F 3 "" H 3300 6600 60  0000 C CNN
 	1    3300 6600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text Label 3400 6050 0    60   ~ 0
 VDD_D
@@ -469,7 +483,7 @@ F 1 "1k" V 1207 4301 40  0000 C CNN
 F 2 "" V 1130 4300 30  0000 C CNN
 F 3 "" H 1200 4300 30  0000 C CNN
 	1    1200 4300
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 $Comp
 L R R?
@@ -480,7 +494,7 @@ F 1 "1k" V 1007 4301 40  0000 C CNN
 F 2 "" V 930 4300 30  0000 C CNN
 F 3 "" H 1000 4300 30  0000 C CNN
 	1    1000 4300
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 $Comp
 L R R?
@@ -491,7 +505,7 @@ F 1 "10k" V 1857 6201 40  0000 C CNN
 F 2 "" V 1780 6200 30  0000 C CNN
 F 3 "" H 1850 6200 30  0000 C CNN
 	1    1850 6200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR?
@@ -502,7 +516,7 @@ F 1 "GND" H 1850 6530 30  0001 C CNN
 F 2 "" H 1850 6600 60  0000 C CNN
 F 3 "" H 1850 6600 60  0000 C CNN
 	1    1850 6600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	1400 5550 2400 5550
@@ -549,7 +563,7 @@ F 1 "GNDA" H 1700 3180 40  0000 C CNN
 F 2 "" H 1700 3250 60  0000 C CNN
 F 3 "" H 1700 3250 60  0000 C CNN
 	1    1700 3250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GNDA #PWR?
@@ -560,7 +574,7 @@ F 1 "GNDA" H 3650 2830 40  0000 C CNN
 F 2 "" H 3650 2900 60  0000 C CNN
 F 3 "" H 3650 2900 60  0000 C CNN
 	1    3650 2900
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R R?
@@ -571,7 +585,7 @@ F 1 "0" V 5157 6551 40  0000 C CNN
 F 2 "" V 5080 6550 30  0000 C CNN
 F 3 "" H 5150 6550 30  0000 C CNN
 	1    5150 6550
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L R R?
@@ -582,7 +596,7 @@ F 1 "0" V 5157 6751 40  0000 C CNN
 F 2 "" V 5080 6750 30  0000 C CNN
 F 3 "" H 5150 6750 30  0000 C CNN
 	1    5150 6750
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L R R?
@@ -593,7 +607,7 @@ F 1 "0" V 5157 6951 40  0000 C CNN
 F 2 "" V 5080 6950 30  0000 C CNN
 F 3 "" H 5150 6950 30  0000 C CNN
 	1    5150 6950
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L R R?
@@ -604,7 +618,7 @@ F 1 "0" V 5157 7151 40  0000 C CNN
 F 2 "" V 5080 7150 30  0000 C CNN
 F 3 "" H 5150 7150 30  0000 C CNN
 	1    5150 7150
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L R R?
@@ -615,7 +629,7 @@ F 1 "0" V 5157 7351 40  0000 C CNN
 F 2 "" V 5080 7350 30  0000 C CNN
 F 3 "" H 5150 7350 30  0000 C CNN
 	1    5150 7350
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L GND #PWR?
@@ -626,7 +640,7 @@ F 1 "GND" H 4850 7480 30  0001 C CNN
 F 2 "" H 4850 7550 60  0000 C CNN
 F 3 "" H 4850 7550 60  0000 C CNN
 	1    4850 7550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GNDA #PWR?
@@ -637,7 +651,7 @@ F 1 "GNDA" H 5450 7480 40  0000 C CNN
 F 2 "" H 5450 7550 60  0000 C CNN
 F 3 "" H 5450 7550 60  0000 C CNN
 	1    5450 7550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4850 7350 4900 7350
@@ -678,20 +692,6 @@ Text Notes 950  1450 0    60   ~ 0
 Low-noise components with separate power/ground planes
 Text Notes 7000 6500 0    60   ~ 12
 DRAFT              DO NOT USE\nThis schematic has not been validated in hardware\nand may contain errors.
-$Sheet
-S 3850 2150 1300 650 
-U 561D755B
-F0 "Oscillator" 60
-F1 "osc.sch" 60
-F2 "VDD_OSC" U L 3850 2250 60 
-F3 "Vc" U L 3850 2400 60 
-F4 "GNDA" U L 3850 2700 60 
-F5 "Vref" O L 3850 2550 60 
-F6 "Fout" O R 5150 2250 60 
-F7 "VDD_D" U R 5150 2550 60 
-F8 "GND" U R 5150 2700 60 
-F9 "EN" I R 5150 2400 60 
-$EndSheet
 Wire Wire Line
 	1300 3450 3300 3450
 Wire Wire Line
@@ -709,7 +709,7 @@ F 1 "GND" H 5350 2830 30  0001 C CNN
 F 2 "" H 5350 2900 60  0000 C CNN
 F 3 "" H 5350 2900 60  0000 C CNN
 	1    5350 2900
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	5550 2550 5150 2550
@@ -744,7 +744,7 @@ F 1 "DNI" V 1600 3500 40  0000 L CNN
 F 2 "" H 1588 3550 30  0000 C CNN
 F 3 "" H 1550 3700 60  0000 C CNN
 	1    1550 3700
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L GNDA #PWR?
@@ -755,7 +755,7 @@ F 1 "GNDA" H 1850 4080 40  0000 C CNN
 F 2 "" H 1850 4150 60  0000 C CNN
 F 3 "" H 1850 4150 60  0000 C CNN
 	1    1850 4150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	1000 3700 1350 3700
@@ -792,7 +792,7 @@ F 1 "DNI" V 1600 3750 40  0000 L CNN
 F 2 "" H 1588 3800 30  0000 C CNN
 F 3 "" H 1550 3950 60  0000 C CNN
 	1    1550 3950
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Wire Wire Line
 	1000 2350 1950 2350
