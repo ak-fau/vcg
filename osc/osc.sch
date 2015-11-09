@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:vcg
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:vcg
 LIBS:osc-cache
 EELAYER 25 0
 EELAYER END
@@ -206,7 +206,7 @@ Text Label 9000 2350 0    60   ~ 0
 Fout
 Wire Wire Line
 	6100 4250 7100 4250
-Text Label 6150 4250 0    60   ~ 0
+Text Label 6250 4250 0    60   ~ 0
 Vc
 Text Notes 7700 7500 0    60   ~ 0
 Crystal oscillator dummy (AOCJY3 replacement)
@@ -398,4 +398,21 @@ Text Notes 7100 7100 0    60   ~ 0
 Versatile Clock Generator\nCopyright (c) 2015 Anton Kuzmin\n\nThe VCG is a Free Hardware project, it is released under dual licenses:\n - CERN Open Hardware License (OHL) v1.2\n - Community Research and Academic Programming License (CRAPL)
 Text Notes 7000 6500 0    60   ~ 12
 DRAFT              DO NOT USE\nThis schematic has not been validated in hardware\nand may contain errors.
+$Comp
+L R R?
+U 1 1 56409E4E
+P 6200 4600
+F 0 "R?" V 6280 4600 40  0000 C CNN
+F 1 "10k" V 6207 4601 40  0000 C CNN
+F 2 "" V 6130 4600 30  0000 C CNN
+F 3 "" H 6200 4600 30  0000 C CNN
+	1    6200 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 4350 6200 4250
+Connection ~ 6200 4250
+Wire Wire Line
+	6200 4850 6200 5250
+Connection ~ 6200 5250
 $EndSCHEMATC
