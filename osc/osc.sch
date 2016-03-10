@@ -83,12 +83,12 @@ $EndComp
 $Comp
 L CONN_1 P3
 U 1 1 557EFB35
-P 5950 4250
-F 0 "P3" H 6030 4250 40  0000 L CNN
-F 1 "CONN_1" H 5950 4305 30  0001 C CNN
-F 2 "" H 5950 4250 60  0000 C CNN
-F 3 "" H 5950 4250 60  0000 C CNN
-	1    5950 4250
+P 5400 4350
+F 0 "P3" H 5480 4350 40  0000 L CNN
+F 1 "CONN_1" H 5400 4405 30  0001 C CNN
+F 2 "" H 5400 4350 60  0000 C CNN
+F 3 "" H 5400 4350 60  0000 C CNN
+	1    5400 4350
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -204,9 +204,7 @@ Wire Wire Line
 	8350 2350 9250 2350
 Text Label 9000 2350 0    60   ~ 0
 Fout
-Wire Wire Line
-	6100 4250 7100 4250
-Text Label 6250 4250 0    60   ~ 0
+Text Label 6900 2700 0    60   ~ 0
 Vc
 Text Notes 7700 7500 0    60   ~ 0
 Crystal oscillator dummy (AOCJY3 replacement)
@@ -271,7 +269,6 @@ F 3 "" H 7300 5300 60  0000 C CNN
 	1    7550 5150
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7200 2700
 $Comp
 L AOCJYR Y2
 U 1 1 55F80A1A
@@ -283,7 +280,6 @@ F 3 "" H 7300 3750 60  0000 C CNN
 	1    7550 3600
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7200 3500
 $Comp
 L C-RESCUE-osc C2
 U 1 1 55F80AD1
@@ -304,16 +300,14 @@ Connection ~ 4850 2350
 $Comp
 L R-RESCUE-osc R7
 U 1 1 55F80C8B
-P 6650 5050
-F 0 "R7" V 6730 5050 40  0000 C CNN
-F 1 "10k" V 6657 5051 40  0000 C CNN
-F 2 "" V 6580 5050 30  0000 C CNN
-F 3 "" H 6650 5050 30  0000 C CNN
-	1    6650 5050
-	0    -1   -1   0   
+P 6350 3800
+F 0 "R7" V 6430 3800 40  0000 C CNN
+F 1 "10k" V 6357 3801 40  0000 C CNN
+F 2 "" V 6280 3800 30  0000 C CNN
+F 3 "" H 6350 3800 30  0000 C CNN
+	1    6350 3800
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6900 5050 7100 5050
 Wire Wire Line
 	8150 2350 8150 5050
 Wire Wire Line
@@ -328,12 +322,6 @@ Connection ~ 8150 3500
 Wire Wire Line
 	8000 2700 8150 2700
 Connection ~ 8150 2700
-Wire Wire Line
-	6400 5050 6350 5050
-Wire Wire Line
-	6350 5050 6350 4850
-Wire Wire Line
-	6350 4850 8150 4850
 Connection ~ 8150 4850
 Wire Wire Line
 	8000 2900 8350 2900
@@ -401,18 +389,54 @@ DRAFT              DO NOT USE\nThis schematic has not been validated in hardware
 $Comp
 L R-RESCUE-osc R6
 U 1 1 56409E4E
-P 6200 4600
-F 0 "R6" V 6280 4600 40  0000 C CNN
-F 1 "10k" V 6207 4601 40  0000 C CNN
-F 2 "" V 6130 4600 30  0000 C CNN
-F 3 "" H 6200 4600 30  0000 C CNN
-	1    6200 4600
+P 5650 4700
+F 0 "R6" V 5730 4700 40  0000 C CNN
+F 1 "10k" V 5657 4701 40  0000 C CNN
+F 2 "" V 5580 4700 30  0000 C CNN
+F 3 "" H 5650 4700 30  0000 C CNN
+	1    5650 4700
 	-1   0    0    1   
 $EndComp
+$Comp
+L R-RESCUE-osc R8
+U 1 1 56E0C2C0
+P 6000 4350
+F 0 "R8" V 6080 4350 40  0000 C CNN
+F 1 "0" V 6007 4351 40  0000 C CNN
+F 2 "" V 5930 4350 30  0000 C CNN
+F 3 "" H 6000 4350 30  0000 C CNN
+	1    6000 4350
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	6200 4350 6200 4250
-Connection ~ 6200 4250
+	5550 4350 5750 4350
+Connection ~ 5650 4350
 Wire Wire Line
-	6200 4850 6200 5250
-Connection ~ 6200 5250
+	5650 4950 5650 5250
+Connection ~ 5650 5250
+Wire Wire Line
+	6350 3550 6350 2350
+Connection ~ 6350 2350
+Wire Wire Line
+	7200 2700 6850 2700
+Wire Wire Line
+	6850 2700 6850 5050
+Wire Wire Line
+	6850 5050 7100 5050
+Wire Wire Line
+	7100 4250 6850 4250
+Connection ~ 6850 4250
+Wire Wire Line
+	7200 3500 6850 3500
+Connection ~ 6850 3500
+Wire Wire Line
+	5650 4350 5650 4450
+Wire Wire Line
+	6250 4350 6850 4350
+Connection ~ 6850 4350
+Wire Wire Line
+	6350 4050 6350 4350
+Connection ~ 6350 4350
+Text Notes 5150 5700 0    60   ~ 0
+R6/R7/R8 -- build time option,\ndepending on the installed oscillator.
 $EndSCHEMATC
