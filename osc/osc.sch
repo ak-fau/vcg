@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:osc-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -103,7 +103,7 @@ F 3 "" H 3750 2800 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R1
+L R-RESCUE-osc R1
 U 1 1 557EFBA9
 P 3550 3600
 F 0 "R1" V 3630 3600 40  0000 C CNN
@@ -114,7 +114,7 @@ F 3 "" H 3550 3600 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L R-RESCUE-osc R2
 U 1 1 557EFC54
 P 3650 3950
 F 0 "R2" V 3730 3950 40  0000 C CNN
@@ -125,7 +125,7 @@ F 3 "" H 3650 3950 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L R-RESCUE-osc R3
 U 1 1 557EFCC8
 P 3750 3600
 F 0 "R3" V 3830 3600 40  0000 C CNN
@@ -136,7 +136,7 @@ F 3 "" H 3750 3600 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L R-RESCUE-osc R4
 U 1 1 557EFD0B
 P 3850 3950
 F 0 "R4" V 3930 3950 40  0000 C CNN
@@ -147,7 +147,7 @@ F 3 "" H 3850 3950 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R5
+L R-RESCUE-osc R5
 U 1 1 557EFD39
 P 3950 3600
 F 0 "R5" V 4030 3600 40  0000 C CNN
@@ -186,7 +186,7 @@ Connection ~ 3850 2350
 Wire Wire Line
 	2900 5250 7100 5250
 $Comp
-L C C1
+L C-RESCUE-osc C1
 U 1 1 557F00A8
 P 4850 2650
 F 0 "C1" H 4850 2750 40  0000 L CNN
@@ -285,7 +285,7 @@ F 3 "" H 7300 3750 60  0000 C CNN
 $EndComp
 NoConn ~ 7200 3500
 $Comp
-L C C2
+L C-RESCUE-osc C2
 U 1 1 55F80AD1
 P 5100 2650
 F 0 "C2" H 5100 2750 40  0000 L CNN
@@ -302,7 +302,7 @@ Wire Wire Line
 	5100 2350 5100 2450
 Connection ~ 4850 2350
 $Comp
-L R R7
+L R-RESCUE-osc R7
 U 1 1 55F80C8B
 P 6650 5050
 F 0 "R7" V 6730 5050 40  0000 C CNN
@@ -399,7 +399,7 @@ Versatile Clock Generator\nCopyright (c) 2015 Anton Kuzmin\n\nThe VCG is a Free 
 Text Notes 7000 6500 0    60   ~ 12
 DRAFT              DO NOT USE\nThis schematic has not been validated in hardware\nand may contain errors.
 $Comp
-L R R6
+L R-RESCUE-osc R6
 U 1 1 56409E4E
 P 6200 4600
 F 0 "R6" V 6280 4600 40  0000 C CNN
