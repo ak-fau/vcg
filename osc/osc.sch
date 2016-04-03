@@ -259,17 +259,6 @@ F 3 "" H 7300 4500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ASV Y4
-U 1 1 55F811B9
-P 7550 5150
-F 0 "Y4" H 7350 5350 60  0000 C CNN
-F 1 "ASV" H 7300 4950 60  0000 L CNN
-F 2 "" H 7300 5300 60  0001 C CNN
-F 3 "" H 7300 5300 60  0000 C CNN
-	1    7550 5150
-	1    0    0    -1  
-$EndComp
-$Comp
 L AOCJYR Y2
 U 1 1 55F80A1A
 P 7550 3600
@@ -439,4 +428,15 @@ Wire Wire Line
 Connection ~ 6350 4350
 Text Notes 5150 5700 0    60   ~ 0
 R6/R7/R8 -- build time option,\ndepending on the installed oscillator.
+$Comp
+L M100 Y4
+U 1 1 5700CE49
+P 7550 5150
+F 0 "Y4" H 7350 5350 60  0000 C CNN
+F 1 "M100" H 7300 4950 60  0000 L CNN
+F 2 "" H 7300 5300 60  0000 C CNN
+F 3 "" H 7300 5300 60  0000 C CNN
+	1    7550 5150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
