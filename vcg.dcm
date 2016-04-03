@@ -64,6 +64,10 @@ $CMP LTC6957-3
 D Low phase noise dual output buffer/driver/level converter
 $ENDCMP
 #
+$CMP M100
+D LVCMOS SMD (VC)TCXO
+$ENDCMP
+#
 $CMP SATA
 D S-ATA connector
 $ENDCMP
