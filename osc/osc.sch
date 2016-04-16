@@ -224,7 +224,7 @@ F 3 "" H 4450 2350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 2900 5350 2900
+	4500 2900 5600 2900
 Wire Wire Line
 	4850 2900 4850 2850
 Text Label 4500 2900 0    60   ~ 0
@@ -456,4 +456,21 @@ Connection ~ 5350 2350
 Wire Wire Line
 	5350 2900 5350 2850
 Connection ~ 5100 2900
+$Comp
+L C-RESCUE-osc C4
+U 1 1 5711F6C8
+P 5600 2650
+F 0 "C4" H 5600 2750 40  0000 L CNN
+F 1 "0.1uF" H 5606 2565 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5638 2500 30  0001 C CNN
+F 3 "" H 5600 2650 60  0000 C CNN
+	1    5600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2450 5600 2350
+Connection ~ 5600 2350
+Wire Wire Line
+	5600 2900 5600 2850
+Connection ~ 5350 2900
 $EndSCHEMATC
