@@ -5,7 +5,7 @@
     (no_connects 0)
     (area 99.924999 74.549999 126.725 101.05)
     (thickness 1.6)
-    (drawings 8)
+    (drawings 13)
     (tracks 98)
     (zones 0)
     (modules 23)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.4)
+    (last_trace_width 1)
     (user_trace_width 0.15)
     (user_trace_width 0.2)
     (user_trace_width 0.25)
@@ -68,11 +68,11 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 1.7272 1.7272)
-    (pad_drill 1.016)
+    (pad_size 1.05 1.05)
+    (pad_drill 0.65)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 100 100)
-    (visible_elements FFFFFF1F)
+    (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x00030_80000001)
       (usegerberextensions false)
@@ -135,12 +135,12 @@
     (add_net "Net-(P6-Pad8)")
   )
 
-  (module Pin_Headers:Pin_Header_Straight_1x02 locked (layer F.Cu) (tedit 56E97A88) (tstamp 56E81BED)
+  (module Pin_Headers:Pin_Header_Straight_1x02 locked (layer F.Cu) (tedit 57151505) (tstamp 56E81BED)
     (at 119 76.6)
     (descr "Through hole pin header")
     (tags "pin header")
     (path /557F292B)
-    (fp_text reference JP1 (at 3.15 3.4 90) (layer F.SilkS)
+    (fp_text reference JP1 (at 3.15 3.4 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.1)))
     )
     (fp_text value JUMPER (at 0.1 1.45 90) (layer F.Fab) hide
@@ -168,12 +168,12 @@
     )
   )
 
-  (module Pin_Headers:Pin_Header_Straight_2x05 locked (layer F.Cu) (tedit 56E97A75) (tstamp 56E81C14)
+  (module Pin_Headers:Pin_Header_Straight_2x05 locked (layer F.Cu) (tedit 57151515) (tstamp 56E81C14)
     (at 116.46 76.6 270)
     (descr "Through hole pin header")
     (tags "pin header")
     (path /557EFB4D)
-    (fp_text reference P6 (at 4.95 0.01 360) (layer F.SilkS)
+    (fp_text reference P6 (at 4.95 0.01 360) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.1)))
     )
     (fp_text value CONN_5X2 (at 5.05 5.15 360) (layer F.Fab) hide
@@ -363,13 +363,13 @@
     )
   )
 
-  (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 56E978A3) (tstamp 56E81C38)
+  (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 57151586) (tstamp 56E81C38)
     (at 124.3 95.7 270)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /56409E4E)
     (attr smd)
-    (fp_text reference R6 (at -3.15 0.05 270) (layer F.SilkS)
+    (fp_text reference R6 (at -1.1 1.6 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.1)))
     )
     (fp_text value 10k (at 0 1.9 270) (layer F.Fab) hide
@@ -392,13 +392,13 @@
     )
   )
 
-  (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 56E97964) (tstamp 56E81C3E)
+  (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5715157A) (tstamp 56E81C3E)
     (at 119.35 96.8)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /55F80C8B)
     (attr smd)
-    (fp_text reference R7 (at -0.95 -1.45) (layer F.SilkS)
+    (fp_text reference R7 (at -0.95 -1.45) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.1)))
     )
     (fp_text value 10k (at 0 1.9) (layer F.Fab) hide
@@ -421,13 +421,13 @@
     )
   )
 
-  (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 57038428) (tstamp 56E81C44)
+  (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 57151582) (tstamp 56E81C44)
     (at 119.35 98.75 180)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /56E0C2C0)
     (attr smd)
-    (fp_text reference R8 (at 0.75 -1.4 180) (layer F.SilkS)
+    (fp_text reference R8 (at 0.75 -1.4 180) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.1)))
     )
     (fp_text value 0 (at 0 1.9 180) (layer F.Fab) hide
@@ -450,12 +450,12 @@
     )
   )
 
-  (module footprints:1pin locked (layer F.Cu) (tedit 5702857E) (tstamp 56E97523)
+  (module footprints:1pin locked (layer F.Cu) (tedit 571513DB) (tstamp 56E97523)
     (at 103.2 96.8)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
     (path /557EFAF6)
-    (fp_text reference P1 (at 0 1.9) (layer F.SilkS)
+    (fp_text reference P1 (at 0 1.9) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.1)))
     )
     (fp_text value CONN_1 (at 0 2.794) (layer F.Fab) hide
@@ -466,12 +466,12 @@
       (net 4 /Fout))
   )
 
-  (module footprints:1pin (layer F.Cu) (tedit 57028586) (tstamp 56E97527)
+  (module footprints:1pin (layer F.Cu) (tedit 5715142F) (tstamp 56E97527)
     (at 112.7 96.8)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
     (path /557EFADA)
-    (fp_text reference P2 (at -0.15 1.9) (layer F.SilkS)
+    (fp_text reference P2 (at -0.15 1.9) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.1)))
     )
     (fp_text value CONN_1 (at 0 2.794) (layer F.Fab) hide
@@ -482,12 +482,12 @@
       (net 2 /GND))
   )
 
-  (module footprints:1pin locked (layer F.Cu) (tedit 5702858C) (tstamp 56E9752B)
+  (module footprints:1pin locked (layer F.Cu) (tedit 57151451) (tstamp 56E9752B)
     (at 122.2 96.8)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
     (path /557EFB35)
-    (fp_text reference P3 (at -1.25 0.05) (layer F.SilkS)
+    (fp_text reference P3 (at -1.25 0.05) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.1)))
     )
     (fp_text value CONN_1 (at 0 2.794) (layer F.Fab) hide
@@ -498,12 +498,12 @@
       (net 5 "Net-(P3-Pad1)"))
   )
 
-  (module footprints:1pin locked (layer F.Cu) (tedit 57028593) (tstamp 56E9752F)
+  (module footprints:1pin locked (layer F.Cu) (tedit 571514F3) (tstamp 56E9752F)
     (at 122.2 77.8)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
     (path /5601594E)
-    (fp_text reference P4 (at 0 -1.5) (layer F.SilkS)
+    (fp_text reference P4 (at 0 -1.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.1)))
     )
     (fp_text value CONN_1 (at 0 2.794) (layer F.Fab) hide
@@ -514,12 +514,12 @@
       (net 6 "Net-(P4-Pad1)"))
   )
 
-  (module footprints:1pin locked (layer F.Cu) (tedit 57028598) (tstamp 56E97533)
+  (module footprints:1pin locked (layer F.Cu) (tedit 571515EE) (tstamp 56E97533)
     (at 103.2 77.8)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
     (path /557EF949)
-    (fp_text reference P5 (at 0 -1.5) (layer F.SilkS)
+    (fp_text reference P5 (at 0 -1.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.1)))
     )
     (fp_text value CONN_1 (at 0 2.794) (layer F.Fab) hide
@@ -530,10 +530,10 @@
       (net 3 /V3P3))
   )
 
-  (module footprints:OSC5032 (layer F.Cu) (tedit 570254F7) (tstamp 57028696)
+  (module footprints:OSC5032 (layer F.Cu) (tedit 57151544) (tstamp 57028696)
     (at 103.95 90.1 180)
     (path /5700CE49)
-    (fp_text reference Y4 (at -0.75 -3.3 360) (layer F.SilkS)
+    (fp_text reference Y4 (at -2.05 3.2 360) (layer F.SilkS)
       (effects (font (size 1.2 1.2) (thickness 0.15)))
     )
     (fp_text value M100 (at 0 0 180) (layer F.Fab)
@@ -554,10 +554,10 @@
       (net 2 /GND))
   )
 
-  (module footprints:OSC7050 (layer F.Cu) (tedit 570381F7) (tstamp 570383A0)
+  (module footprints:OSC7050 (layer F.Cu) (tedit 57151521) (tstamp 570383A0)
     (at 112.95 84.2 180)
     (path /55F810F8)
-    (fp_text reference Y3 (at -1.45 4.2 360) (layer F.SilkS)
+    (fp_text reference Y3 (at 5 2.2 360) (layer F.SilkS)
       (effects (font (size 1.2 1.2) (thickness 0.15)))
     )
     (fp_text value AST3TQ-28 (at 0 0 180) (layer F.Fab)
@@ -578,10 +578,10 @@
       (net 2 /GND))
   )
 
-  (module footprints:OSC-ASOF3S3 (layer F.Cu) (tedit 5711E6A1) (tstamp 5711E846)
+  (module footprints:OSC-ASOF3S3 (layer F.Cu) (tedit 5715155B) (tstamp 5711E846)
     (at 110.65 88.25 180)
     (path /55F810A1)
-    (fp_text reference Y1 (at -8.2 8.65 360) (layer F.SilkS)
+    (fp_text reference Y1 (at -11.8 5.65 360) (layer F.SilkS)
       (effects (font (size 1.2 1.2) (thickness 0.15)))
     )
     (fp_text value ASOF3S3 (at 0 0 180) (layer F.Fab)
@@ -602,10 +602,10 @@
       (net 2 /GND))
   )
 
-  (module footprints:OSC-AOCJYR-SMT (layer F.Cu) (tedit 5711E360) (tstamp 5711E853)
+  (module footprints:OSC-AOCJYR-SMT (layer F.Cu) (tedit 5715154D) (tstamp 5711E853)
     (at 112.05 91.75 180)
     (path /55F80A1A)
-    (fp_text reference Y2 (at -2.7 5.1 180) (layer F.SilkS)
+    (fp_text reference Y2 (at -6.3 2 180) (layer F.SilkS)
       (effects (font (size 1.2 1.2) (thickness 0.15)))
     )
     (fp_text value AOCJYR (at 0 0 180) (layer F.Fab)
@@ -626,13 +626,13 @@
       (net 2 /GND))
   )
 
-  (module Capacitors_SMD:C_1206 (layer F.Cu) (tedit 5711EDFF) (tstamp 5711EDDF)
+  (module Capacitors_SMD:C_1206 (layer F.Cu) (tedit 571515E5) (tstamp 5711EDDF)
     (at 123.5 89.6 90)
     (descr "Capacitor SMD 1206, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 1206")
     (path /55F80AD1)
     (attr smd)
-    (fp_text reference C1 (at 0 -2.3 90) (layer F.SilkS)
+    (fp_text reference C1 (at 3.35 -0.05 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 10uF (at 0 2.3 90) (layer F.Fab) hide
@@ -655,13 +655,13 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5711EE05) (tstamp 5711EDE5)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 57151699) (tstamp 5711EDE5)
     (at 115.45 96.8 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /557F00A8)
     (attr smd)
-    (fp_text reference C2 (at 0 -1.9 180) (layer F.SilkS)
+    (fp_text reference C2 (at 0 -1.9 180) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 0.1uF (at 0 1.9 180) (layer F.Fab) hide
@@ -684,13 +684,13 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5711EDF7) (tstamp 5711EDEB)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 571516A0) (tstamp 5711EDEB)
     (at 106.6 93.55)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5711F01E)
     (attr smd)
-    (fp_text reference C3 (at 0 -1.9) (layer F.SilkS)
+    (fp_text reference C3 (at -0.9 1.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 0.1uF (at 0 1.9) (layer F.Fab) hide
@@ -713,7 +713,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5415D631) (tstamp 5711F5A7)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5715168A) (tstamp 5711F5A7)
     (at 117.95 85.45 90)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -722,7 +722,7 @@
     (fp_text reference C4 (at 0 -1.9 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 0.1uF (at 0 1.9 90) (layer F.Fab)
+    (fp_text value 0.1uF (at 0 1.9 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.45 -0.75) (end 1.45 -0.75) (layer F.CrtYd) (width 0.05))
@@ -742,6 +742,21 @@
     )
   )
 
+  (gr_text Vref (at 122.55 76.1) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text 3.3V (at 102.6 76.25) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text Vc (at 122.9 98.95) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text Gnd (at 111.45 98.65) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text Fout (at 104.9 98.65) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_circle (center 101 99) (end 101 99.5) (layer F.SilkS) (width 0.2))
   (gr_arc (start 123.4 98) (end 125.4 98) (angle 90) (layer Edge.Cuts) (width 0.1))
   (gr_arc (start 123.4 76.6) (end 123.4 74.6) (angle 90) (layer Edge.Cuts) (width 0.1))
@@ -778,6 +793,8 @@
   (segment (start 116.2 96.8) (end 116.2 94.95) (width 0.5) (layer F.Cu) (net 1))
   (segment (start 116.84 94.31) (end 118.27 94.31) (width 0.5) (layer F.Cu) (net 1) (tstamp 5711F1BD))
   (segment (start 116.2 94.95) (end 116.84 94.31) (width 0.5) (layer F.Cu) (net 1) (tstamp 5711F19D))
+  (segment (start 123.5 88.1) (end 123.5 86.35) (width 1) (layer F.Cu) (net 2))
+  (via (at 123.5 86.35) (size 0.6) (drill 0.25) (layers F.Cu B.Cu) (net 2))
   (segment (start 117.95 84.7) (end 119.4 84.7) (width 0.4) (layer F.Cu) (net 2))
   (via (at 119.4 84.7) (size 0.6) (drill 0.25) (layers F.Cu B.Cu) (net 2))
   (segment (start 109.05 89.75) (end 107.5 89.75) (width 1) (layer F.Cu) (net 2))
@@ -792,8 +809,6 @@
   (segment (start 103.03 82.19) (end 105.25 82.19) (width 1) (layer F.Cu) (net 2))
   (segment (start 105.25 82.19) (end 110.4 82.19) (width 1) (layer F.Cu) (net 2) (tstamp 57133C83))
   (segment (start 110.4 82.19) (end 110.41 82.2) (width 1) (layer F.Cu) (net 2) (tstamp 57133C47))
-  (segment (start 123.5 88.1) (end 123.5 86.6) (width 0.5) (layer F.Cu) (net 2))
-  (via (at 123.5 86.6) (size 0.6) (drill 0.25) (layers F.Cu B.Cu) (net 2))
   (segment (start 124.3 94.6) (end 124.3 93.05) (width 0.5) (layer F.Cu) (net 2))
   (via (at 124.3 93.05) (size 0.6) (drill 0.25) (layers F.Cu B.Cu) (net 2))
   (segment (start 114.7 96.8) (end 112.7 96.8) (width 0.5) (layer F.Cu) (net 2))
