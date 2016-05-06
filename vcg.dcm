@@ -60,6 +60,10 @@ $CMP LTC2607-1
 D 16-bit dual rail-to-rail DAC
 $ENDCMP
 #
+$CMP LTC4415
+D Dual 4A ideal diodes
+$ENDCMP
+#
 $CMP LTC6957-3
 D Low phase noise dual output buffer/driver/level converter
 $ENDCMP
