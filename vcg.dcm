@@ -52,6 +52,10 @@ $CMP HSMS2812
 D RF Schottky Barrier Diodes
 $ENDCMP
 #
+$CMP LT6210
+D Programmable Supply Current, R-R Output, Current feedback Amplifier
+$ENDCMP
+#
 $CMP LTC2050
 D Zero-drift Operational Amplifier
 $ENDCMP
