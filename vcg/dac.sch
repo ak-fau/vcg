@@ -161,7 +161,7 @@ U 1 1 56017BFC
 P 4350 1200
 F 0 "P4" H 4350 1500 40  0000 C CNN
 F 1 "TST" H 4350 1450 30  0000 C CNN
-F 2 "Measurement_Points:Test_Point_Keystone_5000-5004_Miniature" H 4350 1200 60  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 4350 1200 60  0001 C CNN
 F 3 "" H 4350 1200 60  0000 C CNN
 	1    4350 1200
 	1    0    0    -1  
@@ -172,7 +172,7 @@ U 1 1 56017C69
 P 4550 1200
 F 0 "P5" H 4550 1500 40  0000 C CNN
 F 1 "TST" H 4550 1450 30  0000 C CNN
-F 2 "Measurement_Points:Test_Point_Keystone_5000-5004_Miniature" H 4550 1200 60  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 4550 1200 60  0001 C CNN
 F 3 "" H 4550 1200 60  0000 C CNN
 	1    4550 1200
 	1    0    0    -1  
@@ -183,7 +183,7 @@ U 1 1 56017C82
 P 4900 1050
 F 0 "P6" V 5050 1200 40  0000 C CNN
 F 1 "TST" V 5000 1200 30  0000 C CNN
-F 2 "Measurement_Points:Test_Point_Keystone_5000-5004_Miniature" H 4900 1050 60  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 4900 1050 60  0001 C CNN
 F 3 "" H 4900 1050 60  0000 C CNN
 	1    4900 1050
 	0    -1   -1   0   
@@ -314,12 +314,12 @@ $EndComp
 $Comp
 L TST P8
 U 1 1 5601991B
-P 7350 1550
-F 0 "P8" H 7350 1850 40  0000 C CNN
-F 1 "TST" H 7350 1800 30  0000 C CNN
-F 2 "Measurement_Points:Test_Point_Keystone_5000-5004_Miniature" H 7350 1550 60  0001 C CNN
-F 3 "" H 7350 1550 60  0000 C CNN
-	1    7350 1550
+P 7350 1500
+F 0 "P8" H 7350 1800 40  0000 C CNN
+F 1 "TST" H 7350 1750 30  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 7350 1500 60  0001 C CNN
+F 3 "" H 7350 1500 60  0000 C CNN
+	1    7350 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -775,7 +775,7 @@ U 1 1 560225EB
 P 5500 3800
 F 0 "P7" H 5500 4100 40  0000 C CNN
 F 1 "TST" H 5500 4050 30  0000 C CNN
-F 2 "Measurement_Points:Test_Point_Keystone_5000-5004_Miniature" H 5500 3800 60  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 5500 3800 60  0001 C CNN
 F 3 "" H 5500 3800 60  0000 C CNN
 	1    5500 3800
 	1    0    0    -1  
@@ -1337,4 +1337,7 @@ Connection ~ 3900 3100
 Wire Wire Line
 	9650 900  9650 800 
 Connection ~ 9650 800 
+Wire Wire Line
+	7350 1500 7350 1550
+Connection ~ 7350 1550
 $EndSCHEMATC

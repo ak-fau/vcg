@@ -55,23 +55,23 @@ $Comp
 L C32AB P1
 U 1 1 55FFE228
 P 10200 2400
-F 0 "P1" H 10200 3250 60  0000 L CNN
-F 1 "C32AB" H 10200 1550 60  0000 L CNN
+F 0 "P1" H 10200 1550 60  0000 L CNN
+F 1 "C32AB" H 10200 3250 60  0000 L CNN
 F 2 "footprints:C32AB" H 10200 2400 60  0001 C CNN
 F 3 "" H 10200 2400 60  0000 C CNN
 	1    10200 2400
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L C32AB P1
 U 2 1 55FFE2B9
 P 9300 2400
-F 0 "P1" H 9300 3250 60  0000 L CNN
-F 1 "C32AB" H 9300 1550 60  0000 L CNN
+F 0 "P1" H 9300 1550 60  0000 L CNN
+F 1 "C32AB" H 9300 3250 60  0000 L CNN
 F 2 "footprints:C32AB" H 9300 2400 60  0001 C CNN
 F 3 "" H 9300 2400 60  0000 C CNN
 	2    9300 2400
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	9950 3350 8500 3350
@@ -170,13 +170,13 @@ Text Label 8500 2250 0    60   ~ 0
 F10_C
 Text Label 8500 2450 0    60   ~ 0
 Fpll_C
-Text Label 8500 2650 0    60   ~ 0
-Fpll_E_P
 Text Label 8500 2750 0    60   ~ 0
+Fpll_E_P
+Text Label 8500 2650 0    60   ~ 0
 Fpll_E_N
-Text Label 8500 2950 0    60   ~ 0
-Fpll_F_P
 Text Label 8500 3050 0    60   ~ 0
+Fpll_F_P
+Text Label 8500 2950 0    60   ~ 0
 Fpll_F_N
 $Comp
 L CONN_2 P2
@@ -225,7 +225,6 @@ F5 "Vref" O L 3850 2550 60
 F6 "Fout" O R 5150 2250 60 
 F7 "VDD_D" U R 5150 2550 60 
 F8 "GND" U R 5150 2700 60 
-F9 "EN" I R 5150 2400 60 
 $EndSheet
 $Sheet
 S 6350 2100 1050 1100
@@ -239,10 +238,10 @@ F5 "VDD_D" U L 6350 2950 60
 F6 "GND" U L 6350 3050 60 
 F7 "F10_C" O R 7400 2250 60 
 F8 "Fpll_C" O R 7400 2450 60 
-F9 "Fpll_E_P" O R 7400 2650 60 
-F10 "Fpll_E_N" O R 7400 2750 60 
-F11 "Fpll_F_P" O R 7400 2950 60 
-F12 "Fpll_F_N" O R 7400 3050 60 
+F9 "Fpll_E_P" O R 7400 2750 60 
+F10 "Fpll_E_N" O R 7400 2650 60 
+F11 "Fpll_F_P" O R 7400 3050 60 
+F12 "Fpll_F_N" O R 7400 2950 60 
 F13 "EN_VDD_A" I L 6350 2800 60 
 $EndSheet
 $Sheet
@@ -514,8 +513,6 @@ Wire Wire Line
 Wire Wire Line
 	10250 5900 5750 5900
 Wire Wire Line
-	5750 5900 5750 2400
-Wire Wire Line
 	5750 4700 6350 4700
 Wire Wire Line
 	7600 4950 8950 4950
@@ -749,9 +746,6 @@ Wire Notes Line
 	4700 1300 750  1300
 Wire Wire Line
 	5150 2250 6350 2250
-Wire Wire Line
-	5750 2400 5150 2400
-Connection ~ 5750 2800
 $Comp
 L C-RESCUE-vcg C2
 U 1 1 562EC4FE
@@ -944,4 +938,6 @@ Wire Wire Line
 	7600 5450 7800 5450
 Wire Wire Line
 	7800 5450 7800 5600
+Wire Wire Line
+	5750 5900 5750 2800
 $EndSCHEMATC
