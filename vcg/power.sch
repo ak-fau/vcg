@@ -536,7 +536,6 @@ F 3 "" H 9100 4850 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	8750 4150 8750 4250
-Connection ~ 8750 4250
 Connection ~ 7200 3650
 Wire Wire Line
 	7750 3650 7750 4550
@@ -653,8 +652,6 @@ Wire Wire Line
 	7950 3750 7950 3650
 Connection ~ 7950 3650
 Wire Wire Line
-	7950 4250 9100 4250
-Wire Wire Line
 	9100 4150 9100 4350
 Connection ~ 9100 4250
 Wire Wire Line
@@ -665,9 +662,6 @@ Wire Wire Line
 Connection ~ 7950 4550
 Wire Wire Line
 	7950 5050 7950 5150
-Connection ~ 8750 5150
-Wire Wire Line
-	7950 5150 9100 5150
 $Comp
 L LTC4415 U16
 U 1 1 572D162A
@@ -916,4 +910,30 @@ F 3 "" V 7500 2300 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	7500 1900 7500 2200
+$Comp
+L GND #PWR?
+U 1 1 58D8B89E
+P 7950 4250
+F 0 "#PWR?" H 7950 4000 50  0001 C CNN
+F 1 "GND" H 7950 4100 50  0000 C CNN
+F 2 "" H 7950 4250 50  0001 C CNN
+F 3 "" H 7950 4250 50  0001 C CNN
+	1    7950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58D8B8FA
+P 7950 5150
+F 0 "#PWR?" H 7950 4900 50  0001 C CNN
+F 1 "GND" H 7950 5000 50  0000 C CNN
+F 2 "" H 7950 5150 50  0001 C CNN
+F 3 "" H 7950 5150 50  0001 C CNN
+	1    7950 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 5150 9100 5150
+Wire Wire Line
+	8750 4250 9100 4250
 $EndSCHEMATC
