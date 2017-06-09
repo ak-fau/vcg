@@ -123,7 +123,7 @@ Connection ~ 2550 1350
 Text HLabel 3900 650  2    60   UnSpc ~ 0
 V_P
 Text HLabel 3900 850  2    60   UnSpc ~ 0
-V_M
+V_N
 Wire Wire Line
 	3000 1250 3000 650 
 Wire Wire Line

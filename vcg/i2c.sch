@@ -207,7 +207,7 @@ VDD_D
 Text HLabel 2150 1100 0    60   UnSpc ~ 0
 VDD_D
 Text HLabel 2150 2150 0    60   UnSpc ~ 0
-V_M
+V_N
 Text HLabel 2150 1750 0    60   UnSpc ~ 0
 V_P
 $Comp
