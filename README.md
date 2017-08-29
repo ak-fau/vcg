@@ -8,11 +8,11 @@ with I2C-bus connected devices.
 
 The hardware is designed with free/open-source KiCAD EDA Software Suite.
 
-*Disclaimer *
-/The design and ideas are not very original ones, there are many similar devices
+_**Disclaimer**
+The design and ideas are not very original ones, there are many similar devices
 available in real products or on the Internet. The sole purpose of this
 project is to build a convenient and universal module for the author's own
-education and use and to release it explicitly as a Free Hardware Design./
+education and use and to release it explicitly as a Free Hardware Design._
 
 ## Structure
 
