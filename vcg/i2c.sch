@@ -36,9 +36,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 6
-Title ""
-Date ""
-Rev ""
+Title "I2C devices: system monitoring and F-RAM"
+Date "2017-08-30"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -535,11 +535,7 @@ System monitoring (power consumption and temperature)
 Text Notes 7550 4050 0    60   ~ 0
 F-RAM for calibration parameters and data logging
 Text Notes 7100 7100 0    60   ~ 0
-Versatile Clock Generator\nCopyright (c) 2015 Anton Kuzmin\n\nThe VCG is a Free Hardware project, it is released under dual licenses:\n - CERN Open Hardware License (OHL) v1.2\n - Community Research and Academic Programming License (CRAPL)
-Text Notes 7450 7500 0    60   ~ 0
-I2C devices: system monitoring and F-RAM
-Text Notes 8200 7650 0    60   ~ 0
-2015-10-27
+Versatile Clock Generator\nCopyright (c) 2015-2017 Anton Kuzmin\n\nThe VCG is a Free Hardware project, it is released under dual licenses:\n - CERN Open Hardware License (OHL) v1.2\n - Community Research and Academic Programming License (CRAPL)
 Text Notes 7000 6500 0    60   ~ 12
 DRAFT              DO NOT USE\nThis schematic has not been validated in hardware\nand may contain errors.
 Text Notes 5250 2250 0    60   ~ 0
