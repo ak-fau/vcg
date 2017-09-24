@@ -1,0 +1,36 @@
+Drill report for /home/ak/Work/vcg/vcg/vcg.kicad_pcb
+Created on Sun Sep 24 15:39:56 2017
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  In1.Cu                    inner1
+    L3 :  In2.Cu                    inner2
+    L4 :  B.Cu                      back
+
+
+Drill file 'vcg.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.30mm  0.012"  (43 holes)
+    T2  0.40mm  0.016"  (380 holes)
+    T3  0.50mm  0.020"  (32 holes)
+    T4  0.60mm  0.024"  (9 holes)
+    T5  0.65mm  0.026"  (5 holes)
+    T6  0.80mm  0.031"  (5 holes)
+    T7  1.00mm  0.039"  (32 holes)
+    T8  1.02mm  0.040"  (3 holes)
+    T9  1.10mm  0.043"  (4 holes)
+    T10  1.35mm  0.053"  (2 holes)
+    T11  2.80mm  0.110"  (2 holes)
+    T12  3.20mm  0.126"  (4 holes)
+
+    Total plated holes count 521
+
+
+Drill file 'vcg-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  3.10mm  0.122"  (2 holes)
+
+    Total unplated holes count 2
