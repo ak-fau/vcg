@@ -14,6 +14,8 @@ available in real products or on the Internet. The sole purpose of this
 project is to build a convenient and universal module for the author's own
 education and use and to release it explicitly as a Free Hardware Design._
 
+![Partially assembled VCG board](./doc/vcg-partially-assembled-small.jpg)
+
 ## Structure
 
 The VCG board is build around oven controlled crystal oscillator (OCXO).
